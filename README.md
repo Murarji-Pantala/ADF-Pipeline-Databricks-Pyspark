@@ -42,3 +42,5 @@ In Azure Databricks Create Secrete Scope use the Vault URL and Resouce Id for DN
 ![alt text](<Reference Images/Processed Container.png>)
 
 ![alt text](<Reference Images/Staging .png>)
+
+![alt text](<Reference Images/Partition On Region .png>)
