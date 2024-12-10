@@ -53,11 +53,11 @@
                         "type": "DatasetReference",
                         "parameters": {
                             "srcContainer": {
-                                "value": "@pipeline().parameters.targetContainer",
+                                "value": "@pipeline().parameters.sourceContainer",
                                 "type": "Expression"
                             },
                             "srcTable": {
-                                "value": "@pipeline().parameters.targetTable",
+                                "value": "@pipeline().parameters.sourceTable",
                                 "type": "Expression"
                             }
                         }
@@ -103,7 +103,7 @@
                     "notebookPath": "/Project/curated"
                 },
                 "linkedServiceName": {
-                    "referenceName": "ls_AzureDatabricks_curated",
+                    "referenceName": "ls_curated_databricks",
                     "type": "LinkedServiceReference"
                 }
             },
@@ -130,7 +130,7 @@
                     "notebookPath": "/Project/staging"
                 },
                 "linkedServiceName": {
-                    "referenceName": "ls_AzureDatabricks_staging",
+                    "referenceName": "ls_staging_Databricks",
                     "type": "LinkedServiceReference"
                 }
             }
@@ -141,8 +141,16 @@
             },
             "targetTable": {
                 "type": "string"
+            },
+            "sourceContainer": {
+                "type": "string"
+            },
+            "sourceTable": {
+                "type": "string"
             }
         },
-        "annotations": []
-    }
+        "annotations": [],
+        "lastPublishTime": "2024-12-03T22:34:43Z"
+    },
+    "type": "Microsoft.DataFactory/factories/pipelines"
 }
